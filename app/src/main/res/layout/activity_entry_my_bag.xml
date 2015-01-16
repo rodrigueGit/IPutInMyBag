@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background"
+    tools:context=".EntryMyBagActivity"
+    android:id="@+id/myframe">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="122dp"
+        android:layout_height="136dp"
+        android:layout_gravity="left|bottom"
+        android:id="@+id/buttonframe"
+        android:focusable="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/reset_button"
+            android:id="@+id/resetbutton"
+            android:layout_gravity="left|bottom"
+            android:onClick="resetButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="@string/input_button"
+            android:id="@+id/inputbutton"
+            android:onClick="inputButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/end_button"
+            android:id="@+id/endbutton"
+            android:onClick="endButton" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/baginput"
+        android:layout_gravity="center"
+        android:hint="@string/object"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:layout_width="73dp"
+        android:layout_height="90dp"
+        android:id="@+id/imagebutton"
+        android:layout_gravity="center_horizontal|top"
+        android:clickable="true"
+        android:background="@drawable/ic_launcher"
+        android:cropToPadding="true"
+        android:visibility="invisible"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/input_error" />
+
+    <EditText
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bagsize"
+        android:layout_gravity="center_horizontal|top"
+        android:inputType="number" />
+
+</FrameLayout>

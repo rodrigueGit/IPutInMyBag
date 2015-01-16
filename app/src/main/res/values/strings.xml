@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IPutInMyBag</string>
+    <string name="dummy_button">My button</string>
+    <string name="reset_button">Reset</string>
+    <string name="input_button">Input</string>
+    <string name="end_button">End</string>
+    <string name="bag_size_text">Bag Size</string>
+    <string name="object">Object to put in my bag</string>
+    <string name="input_error">Object to be activated on error</string>
+
+</resources>
